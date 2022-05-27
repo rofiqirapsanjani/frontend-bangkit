@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ProjectCapstone</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Daftar</string>
+    <string name="signup_2">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="have_account">sudah memiliki akun?</string>
+    <string name="dont_have_account">Belum memiliki akun?</string>
+    <string name="copyright">© 2022 CapTeam</string>
+    <string name="masuk">Masuk</string>
+
+    <string name="logout_menu">Logout</string>
+</resources>
