@@ -45,12 +45,12 @@ class RegisterActivity : AppCompatActivity() {
         val tolog = ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA, 1f).setDuration(500)
 
         val together = AnimatorSet().apply {
-            playTogether(haveacc, tolog)
+            playTogether(nametv, name, emailtv, email, pwtv, pass, login, haveacc, tolog)
         }
 
 
         AnimatorSet().apply {
-            playSequentially(image, nametv, name, emailtv, email, pwtv, pass, login, together)
+            playSequentially(image, together)
             start()
         }
 

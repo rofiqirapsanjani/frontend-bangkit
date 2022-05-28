@@ -55,13 +55,6 @@ class MainActivity : AppCompatActivity() {
             ViewModelFactory(UserPreference.getInstance(dataStore))
         )[MainViewModel::class.java]
 
-        mainViewModel.getUser().observe(this, { user ->
-            if (!user.isLogin){
-                startActivity(Intent(this, LoginActivity::class.java))
-            } else {
-                startActivity(Intent(this, MainActivity::class.java))
-                finish()
-            }
-        })
+
     }
 }

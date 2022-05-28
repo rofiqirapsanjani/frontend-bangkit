@@ -32,24 +32,20 @@ class LoginActivity : AppCompatActivity() {
     private fun playAnimation() {
         val image = ObjectAnimator.ofFloat(binding.imageView, View.ALPHA, 1f).setDuration(500)
         val emailtv = ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(500)
-        val email =
-            ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(500)
-        val pwtv = ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(500)
-        val pass =
-            ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(500)
+        val email = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(500)
+        val passtv = ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(500)
+        val pass = ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(500)
         val login = ObjectAnimator.ofFloat(binding.loginButton, View.ALPHA, 1f).setDuration(500)
-
-        val haveacc =
-            ObjectAnimator.ofFloat(binding.tvAlreadyHaveAccount, View.ALPHA, 1f).setDuration(500)
+        val haveacc = ObjectAnimator.ofFloat(binding.tvAlreadyHaveAccount, View.ALPHA, 1f).setDuration(500)
         val toreg = ObjectAnimator.ofFloat(binding.toRegister, View.ALPHA, 1f).setDuration(500)
 
         val together = AnimatorSet().apply {
-            playTogether(haveacc, toreg)
+            playTogether(emailtv, email, passtv, pass, login, haveacc, toreg)
         }
 
 
         AnimatorSet().apply {
-            playSequentially(image, emailtv, email, pwtv, pass, login, together)
+            playSequentially(image, together)
             start()
         }
 

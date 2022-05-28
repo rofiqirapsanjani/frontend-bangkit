@@ -9,6 +9,7 @@ import com.example.projectcapstone.model.UserPreference
 import kotlinx.coroutines.launch
 
 class MainViewModel (private val pref: UserPreference) : ViewModel() {
+
     fun getUser(): LiveData<UserModel> {
         return pref.getUser().asLiveData()
     }
