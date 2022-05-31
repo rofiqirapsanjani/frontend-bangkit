@@ -1,21 +1,25 @@
-package com.example.projectcapstone.ui.dashboard
+package com.example.projectcapstone.ui.wishlist
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.projectcapstone.databinding.FragmentDashboardBinding
+import com.example.projectcapstone.databinding.FragmentWishlistBinding
 
-class DashboardFragment : Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
+class WishlistFragment : Fragment() {
+
+    private var _binding: FragmentWishlistBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,10 +27,11 @@ class DashboardFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
+            ViewModelProvider(this).get(WishlistViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentWishlistBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
 
         val textView: TextView = binding.textDashboard
         dashboardViewModel.text.observe(viewLifecycleOwner) {
@@ -39,4 +44,5 @@ class DashboardFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }

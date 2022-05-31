@@ -24,7 +24,7 @@
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/primary_green</item>
         <item name="windowSplashScreenAnimationDuration">3000</item>
-        <item name="android:windowSplashscreenContent">@drawable/splashscreen_full</item>
+        <item name="android:windowSplashscreenContent">@drawable/sscreen</item>
         <item name="postSplashScreenTheme">@style/Theme.ProjectCapstone</item>
     </style>
 </resources>
