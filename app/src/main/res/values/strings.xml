@@ -19,4 +19,10 @@
     <string name="logout_menu">Logout</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location">location</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="shopping_address">Shopping Address</string>
+    <string name="order_history">Order History</string>
+    <string name="cards">Cards</string>
+    <string name="my_store">My Store</string>
 </resources>
