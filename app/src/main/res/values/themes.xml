@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.ProjectCapstone" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/reserve_green</item>
+        <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/primary_green</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
