@@ -25,4 +25,7 @@
     <string name="order_history">Order History</string>
     <string name="cards">Cards</string>
     <string name="my_store">My Store</string>
+    <string name="review">Ulasan</string>
+    <string name="product_sell">Produk Terjual</string>
+    <string name="time_seller">Lama Berjualan</string>
 </resources>
