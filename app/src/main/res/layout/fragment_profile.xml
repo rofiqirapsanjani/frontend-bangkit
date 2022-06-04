@@ -24,7 +24,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.075" />
+
+    <RelativeLayout
+        android:id="@+id/view_loading"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:background="@drawable/button_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258">
+
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/iv_detail_avatar"
@@ -70,12 +84,15 @@
         android:id="@+id/btn_edit_profile"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
         android:text="@string/edit_profile"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/tv_detail_location"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/tv_detail_location"
         app:layout_constraintTop_toBottomOf="@+id/tv_detail_location" />
 
@@ -83,12 +100,15 @@
         android:id="@+id/btn_shopping_address"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
         android:text="@string/shopping_address"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_edit_profile"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_edit_profile"
         app:layout_constraintTop_toBottomOf="@+id/btn_edit_profile" />
 
@@ -96,12 +116,15 @@
         android:id="@+id/btn_order_history"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
         android:text="@string/order_history"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_shopping_address"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_shopping_address"
         app:layout_constraintTop_toBottomOf="@+id/btn_shopping_address" />
 
@@ -109,12 +132,15 @@
         android:id="@+id/btn_cards"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
         android:text="@string/cards"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_order_history"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_order_history"
         app:layout_constraintTop_toBottomOf="@+id/btn_order_history" />
 
@@ -122,12 +148,15 @@
         android:id="@+id/btn_my_store"
         android:layout_width="320dp"
         android:layout_height="50dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
         android:text="@string/my_store"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btn_cards"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_cards"
         app:layout_constraintTop_toBottomOf="@+id/btn_cards" />
 
