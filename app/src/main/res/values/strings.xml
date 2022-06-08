@@ -6,6 +6,7 @@
     <string name="title_profile">Profile</string>
 
     <string name="name">Nama</string>
+    <string name="username">Username</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="signup">Daftar</string>
@@ -29,8 +30,8 @@
     <string name="product_sell">Produk Terjual</string>
     <string name="time_seller">Lama Berjualan</string>
 
-    <string name="reg_ok">registrasi berhasil</string>
-    <string name="reg_fail">registrasi gagal</string>
+    <string name="reg_ok">Registrasi berhasil</string>
+    <string name="reg_fail">Registrasi gagal</string>
     <string name="login_ok">Login Berhasil</string>
     <string name="login_fail">Login Gagal</string>
 

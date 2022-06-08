@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.ThemedSpinnerAdapter
 import androidx.datastore.core.DataStore
@@ -31,8 +32,10 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("s
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var loginViewModel: LoginViewModel
     private lateinit var binding: ActivityLoginBinding
+    private val loginViewModel: LoginViewModel by viewModels {
+        ViewModelFactory.getInstance(this)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,9 +43,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         editTextListener()
+        buttonListener()
         setMyButtonEnable()
-
-
         playAnimation()
     }
 
@@ -111,8 +113,7 @@ class LoginActivity : AppCompatActivity() {
         val resultEmail = binding.emailEditText.text
 
         binding.loginButton.isEnabled = resultPassword != null && resultEmail != null &&
-                binding.passwordEditText.text.toString().length >= 6 &&
-                Helper.isEmailValid(binding.emailEditText.text.toString())
+                binding.passwordEditText.text.toString().length >= 5
     }
 
     private fun showAlertDialog(param: Boolean, message: String) {
@@ -143,41 +144,42 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-//    private fun buttonListener() {
-//        binding.loginButton.setOnClickListener {
-//            val email = binding.emailEditText.text.toString()
-//            val pass = binding.passwordEditText.text.toString()
-//
-//            loginViewModel.login(email, pass).observe(this) {
-//                when (it) {
-//                    is ResultResponse.Loading -> {
-//                        binding.progressBar.visibility = View.VISIBLE
-//                    }
-//                    is ResultResponse.Success -> {
-//                        binding.progressBar.visibility = View.GONE
-//                        val user = UserModel(
-//                            it.data.name,
-//                            email,
-//                            pass,
-//                            it.data.userId,
-//                            it.data.token,
-//                            true
-//                        )
-//                        showAlertDialog(true, getString(R.string.login_ok))
-//
-//                        val userPref = UserPreference.getInstance(dataStore)
-//                        lifecycleScope.launchWhenStarted {
-//                            userPref.saveUser(user)
-//                        }
-//                    }
-//                    is ResultResponse.Error -> {
-//                        binding.progressBar.visibility = View.GONE
-//                        showAlertDialog(false, it.error)
-//                    }
-//                }
-//            }
-//        }
-//    }
+    private fun buttonListener() {
+        binding.loginButton.setOnClickListener {
+            val email = binding.emailEditText.text.toString()
+            val pass = binding.passwordEditText.text.toString()
+
+            loginViewModel.login(email, pass).observe(this) {
+                when (it) {
+                    is ResultResponse.Loading -> {
+                        binding.progressBar.visibility = View.VISIBLE
+                    }
+                    is ResultResponse.Success -> {
+                        binding.progressBar.visibility = View.GONE
+                        val user = UserModel(
+                            it.data.name,
+                            email,
+                            pass,
+                            it.data.userId,
+                            it.data.token,
+                            true
+                        )
+                        showAlertDialog(true, getString(R.string.login_ok))
+
+                        val userPref = UserPreference.getInstance(dataStore)
+                        lifecycleScope.launchWhenStarted {
+                            userPref.saveUser(user)
+                        }
+                    }
+                    is ResultResponse.Error -> {
+                        binding.progressBar.visibility = View.GONE
+                        showAlertDialog(false, it.error)
+
+                    }
+                }
+            }
+        }
+    }
 
 //    private fun showLoading() {
 //        loginViewModel.isLoading.observe(this) {

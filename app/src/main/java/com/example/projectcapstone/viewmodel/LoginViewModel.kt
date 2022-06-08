@@ -20,6 +20,6 @@ import retrofit2.Response
 
 class LoginViewModel (private val repository: Repository): ViewModel()  {
 
-    fun login(email: String, pass: String) =
-        repository.login(email, pass)
+    fun login(name: String, pass: String) =
+        repository.login(name, pass)
 }

@@ -30,19 +30,19 @@ class Repository(
             }
         }
 
-    fun login(email: String, pass: String): LiveData<ResultResponse<LoginResult>> =
+    fun login(name: String, pass: String): LiveData<ResultResponse<LoginResult>> =
         liveData {
             emit(ResultResponse.Loading)
             try {
-                val response = apiService.login(email, pass)
+                val response = apiService.login(name, pass)
                 if (!response.error) {
                     emit(ResultResponse.Success(response.loginResult))
                 } else {
-                    Log.e(TAG, "Register Fail: ${response.message}")
+                    Log.e(TAG, "Login Fail: ${response.message}")
                     emit(ResultResponse.Error(response.message))
                 }
             } catch (e: Exception) {
-                Log.e(TAG, "Register Exception: ${e.message.toString()} ")
+                Log.e(TAG, "Login Exception: ${e.message.toString()} ")
                 emit(ResultResponse.Error(e.message.toString()))
             }
         }

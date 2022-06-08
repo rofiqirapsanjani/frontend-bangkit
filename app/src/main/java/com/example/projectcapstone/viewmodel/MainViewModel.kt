@@ -6,6 +6,7 @@ import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.projectcapstone.model.UserModel
 import com.example.projectcapstone.model.UserPreference
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
 class MainViewModel (private val pref: UserPreference) : ViewModel() {
