@@ -1,10 +1,15 @@
 package com.example.projectcapstone.model
 
+import com.google.gson.annotations.SerializedName
+
 data class UserModel(
-    val name: String,
+    val username: String,
     val email: String,
     val password: String,
-    val userId: String,
-    val token: String,
-    val isLogin: Boolean
+    val isAdmin: Boolean,
+    val _id: String,
+    val createdAt: String,
+    val updatedAt: String,
+    val __v: Int
+
 )

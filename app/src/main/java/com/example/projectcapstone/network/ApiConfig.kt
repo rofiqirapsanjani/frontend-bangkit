@@ -17,7 +17,7 @@ class ApiConfig {
             .addInterceptor(loggingInterceptor)
             .build()
         val retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://nodejs-backend-352114.et.r.appspot.com")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
@@ -25,6 +25,7 @@ class ApiConfig {
     }
 
     companion object {
+        val BASE_URL = "https://nodejs-backend-352114.et.r.appspot.com/"
         fun getApiService(): ApiService {
             val loggingInterceptor = if (BuildConfig.DEBUG) {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
@@ -35,7 +36,7 @@ class ApiConfig {
                 .addInterceptor(loggingInterceptor)
                 .build()
             val retrofit = Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()

@@ -14,9 +14,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.projectcapstone.MainActivity
 import com.example.projectcapstone.R
 import com.example.projectcapstone.authentication.login.LoginActivity
+import com.example.projectcapstone.authentication.register.RegisterActivity
 import com.example.projectcapstone.model.UserPreference
 import com.example.projectcapstone.viewmodel.MainViewModel
 import com.example.projectcapstone.viewmodel.ViewModelFactory
+import com.example.projectcapstone.viewmodel.ViewModelUserFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore("settings")
 
@@ -35,15 +37,15 @@ class SplashScreenActivity : AppCompatActivity() {
     private fun setupViewModel() {
         mainViewModel = ViewModelProvider(
             this,
-            ViewModelFactory(UserPreference.getInstance(dataStore))
+            ViewModelUserFactory(UserPreference.getInstance(dataStore))
         )[MainViewModel::class.java]
 
         mainViewModel.getUser().observe(this) {
-            if (it.isLogin){
-                startActivity(Intent(this, MainActivity::class.java))
+            if (it.isAdmin){
+                startActivity(Intent(this, RegisterActivity::class.java))
                 finish()
             } else {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, RegisterActivity::class.java))
                 finish()
             }
         }

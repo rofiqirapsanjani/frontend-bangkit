@@ -28,4 +28,12 @@
     <string name="review">Ulasan</string>
     <string name="product_sell">Produk Terjual</string>
     <string name="time_seller">Lama Berjualan</string>
+
+    <string name="reg_ok">registrasi berhasil</string>
+    <string name="reg_fail">registrasi gagal</string>
+    <string name="login_ok">Login Berhasil</string>
+    <string name="login_fail">Login Gagal</string>
+
+    <string name="information">Informasi</string>
+    <string name="lanjut">lanjut</string>
 </resources>

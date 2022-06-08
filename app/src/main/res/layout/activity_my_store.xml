@@ -88,12 +88,12 @@
 
     </RelativeLayout>
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/iv_detail_avatar"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:layout_marginTop="16dp"
-        android:src="@tools:sample/avatars"
+        tools:srcCompat="@tools:sample/avatars"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

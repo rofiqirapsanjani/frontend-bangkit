@@ -42,7 +42,7 @@ class LoginCustomView : TextInputEditText {
             }
 
             override fun afterTextChanged(e: Editable?) {
-                if (e.toString().length < 6) {
+                if (e.toString().length < 5) {
                     error = "Password invalid"
                 } else {
                     error = null

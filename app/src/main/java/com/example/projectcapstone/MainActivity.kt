@@ -18,8 +18,9 @@ import com.example.projectcapstone.databinding.ActivityMainBinding
 import com.example.projectcapstone.model.UserPreference
 import com.example.projectcapstone.viewmodel.MainViewModel
 import com.example.projectcapstone.viewmodel.ViewModelFactory
+import com.example.projectcapstone.viewmodel.ViewModelUserFactory
 
-private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore("settings")
 
 
 class MainActivity : AppCompatActivity() {
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     private fun setupViewModel() {
         mainViewModel = ViewModelProvider(
             this,
-            ViewModelFactory(UserPreference.getInstance(dataStore))
+            ViewModelUserFactory(UserPreference.getInstance(dataStore))
         )[MainViewModel::class.java]
 
 
