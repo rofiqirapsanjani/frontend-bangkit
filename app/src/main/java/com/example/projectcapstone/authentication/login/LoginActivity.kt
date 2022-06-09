@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
@@ -50,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
 
     private fun playAnimation() {
         val image = ObjectAnimator.ofFloat(binding.imageView, View.ALPHA, 1f).setDuration(500)
-        val emailtv = ObjectAnimator.ofFloat(binding.emailTextView, View.ALPHA, 1f).setDuration(500)
+        val emailtv = ObjectAnimator.ofFloat(binding.emailEditText, View.ALPHA, 1f).setDuration(500)
         val email = ObjectAnimator.ofFloat(binding.emailEditTextLayout, View.ALPHA, 1f).setDuration(500)
         val passtv = ObjectAnimator.ofFloat(binding.passwordTextView, View.ALPHA, 1f).setDuration(500)
         val pass = ObjectAnimator.ofFloat(binding.passwordEditTextLayout, View.ALPHA, 1f).setDuration(500)
@@ -180,13 +181,4 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
-//    private fun showLoading() {
-//        loginViewModel.isLoading.observe(this) {
-//            binding.apply {
-//                if (it) progressBar.visibility = View.VISIBLE
-//                else progressBar.visibility = View.GONE
-//            }
-//        }
-//    }
 }

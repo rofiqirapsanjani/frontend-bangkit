@@ -2,9 +2,21 @@ package com.example.projectcapstone.network.response
 
 import com.google.gson.annotations.SerializedName
 
-data class LoginResponse (
-    @field:SerializedName("loginResult")
-    val loginResult: LoginResult,
+data class LoginResponse(
+    @field:SerializedName("_id")
+    val userId: String,
+
+    @field:SerializedName("email")
+    val email: String,
+
+    @field:SerializedName("username")
+    val name: String,
+
+    @field:SerializedName("accessToken")
+    val token: String,
+
+    @field:SerializedName("isAdmin")
+    val isAdmin: Boolean,
 
     @field:SerializedName("error")
     val error: Boolean,
@@ -12,15 +24,3 @@ data class LoginResponse (
     @field:SerializedName("message")
     val message: String
 )
-
-data class LoginResult(
-
-    @field:SerializedName("name")
-    val name: String,
-
-    @field:SerializedName("userId")
-    val userId: String,
-
-    @field:SerializedName("token")
-    val token: String
-    )

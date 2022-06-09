@@ -5,7 +5,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import com.example.projectcapstone.network.ApiService
-import com.example.projectcapstone.network.response.LoginResult
+import com.example.projectcapstone.network.response.LoginResponse
 import com.example.projectcapstone.network.response.RegisterResponse
 import com.example.projectcapstone.network.response.ResultResponse
 
@@ -30,13 +30,13 @@ class Repository(
             }
         }
 
-    fun login(name: String, pass: String): LiveData<ResultResponse<LoginResult>> =
+    fun login(name: String, pass: String): LiveData<ResultResponse<LoginResponse>> =
         liveData {
             emit(ResultResponse.Loading)
             try {
                 val response = apiService.login(name, pass)
                 if (!response.error) {
-                    emit(ResultResponse.Success(response.loginResult))
+                    emit(ResultResponse.Success(response))
                 } else {
                     Log.e(TAG, "Login Fail: ${response.message}")
                     emit(ResultResponse.Error(response.message))
