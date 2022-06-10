@@ -19,25 +19,29 @@ data class ProductResponse(
 @Parcelize
 data class Product(
 
-    @field:SerializedName("photoUrl")
-    val photoUrl: String,
+    @field:SerializedName("img")
+    val img: String,
 
-    @field:SerializedName("harga")
-    val harga: String,
+    @field:SerializedName("title")
+    val title: String,
 
-    @field:SerializedName("name")
-    val name: String,
+    @field:SerializedName("price")
+    val price: String,
 
-    @field:SerializedName("description")
+    @field:SerializedName("desc")
     val description: String,
 
-    @field:SerializedName("lon")
-    val lon: Double?,
+    @field:SerializedName("categories")
+    val categories: String,
+
+    @field:SerializedName("size")
+    val size: String,
 
     @field:SerializedName("id")
     val id: String,
 
-    @field:SerializedName("lat")
-    val lat: Double?
+    @field:SerializedName("color")
+    val color: String
 
 ) : Parcelable
+
