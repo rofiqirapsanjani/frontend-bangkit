@@ -49,7 +49,6 @@
     <TextView
         android:id="@+id/emailTextView"
         android:textSize="20sp"
-
         android:alpha="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
