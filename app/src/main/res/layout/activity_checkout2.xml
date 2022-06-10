@@ -134,7 +134,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="12dp"
                 android:onClick="onCheckboxClicked"
-                android:text="JNT" />
+                android:text="JNT"
+                tools:ignore="OnClick" />
 
 
             <CheckBox
@@ -144,7 +145,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="12dp"
                 android:onClick="onCheckboxClicked"
-                android:text="SiCepat" />
+                android:text="SiCepat"
+                tools:ignore="OnClick" />
 
             <CheckBox
                 android:id="@+id/checkbox_anteraja"
@@ -153,7 +155,8 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="12dp"
                 android:onClick="onCheckboxClicked"
-                android:text="TIKI" />
+                android:text="TIKI"
+                tools:ignore="OnClick" />
 
 
         </LinearLayout>
@@ -198,7 +201,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:onClick="onCheckboxClicked"
-            android:text="Cash On Delivery" />
+            android:text="Cash On Delivery"
+            tools:ignore="OnClick" />
 
     </LinearLayout>
 
