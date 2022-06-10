@@ -5,33 +5,48 @@
       <map>
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.119" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/button_rounded.xml" value="0.1" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_arrow___left.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1125" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_buy.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_ellipse_739.xml" value="0.184" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_favorite_border_unfilled.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_favorite_filled.xml" value="0.1185" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_heart.xml" value="0.1" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_home.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.119" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_profile.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/ic_splash_background.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/shape_panel.xml" value="0.103" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/shape_panel_payment.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/splash_foreground.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/drawable/wishlist_shape_panel.xml" value="0.1325" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.11010709504685408" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_checkout.xml" value="0.8548387096774194" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_checkout2.xml" value="0.2379421221864952" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_main.xml" value="0.11891891891891893" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_my_store.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_order_history.xml" value="0.26856884057971014" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/activity_splash_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/content_scrolling.xml" value="0.16530797101449277" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_cart.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_home.xml" value="0.3104265402843602" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_notifications.xml" value="0.16802536231884058" />
-        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_profile.xml" value="0.16802536231884058" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_profile.xml" value="0.22" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/fragment_wishlist.xml" value="0.22" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/item_catalog.xml" value="0.4673157162726008" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/item_mystore.xml" value="0.1" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/layout/item_shippingbox.xml" value="0.1254355400696864" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22" />
+        <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/menu/menu_checkout.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/menu/option_menu.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/daffa/AndroidStudioProjects/ProjectCapstone/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />

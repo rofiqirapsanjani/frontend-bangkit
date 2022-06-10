@@ -27,4 +27,13 @@
         <item name="android:windowSplashscreenContent">@drawable/sscreen</item>
         <item name="postSplashScreenTheme">@style/Theme.ProjectCapstone</item>
     </style>
+
+    <style name="Theme.ProjectCapstone.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ProjectCapstone.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ProjectCapstone.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
