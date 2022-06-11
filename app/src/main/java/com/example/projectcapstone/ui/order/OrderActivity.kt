@@ -19,7 +19,6 @@ class OrderActivity  : AppCompatActivity() {
         binding = ActivityOrderBinding.inflate(layoutInflater)
         setContentView(binding.root)
         orderViewModel = ViewModelProvider(this).get(OrderViewModel::class.java)
-        stripePayment = StripePayment()
 //        lifecycleScope.launch{
 //            accessToken=pref.getPreferences()[UserPreference.]
 //        }
