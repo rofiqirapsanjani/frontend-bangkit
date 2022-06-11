@@ -15,6 +15,12 @@
         android:theme="@style/Theme.ProjectCapstone"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.order.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProductDetail"
+            android:exported="false" />
+        <activity
             android:name=".ui.checkout.CheckoutActivity"
             android:exported="false"
             android:label="@string/title_activity_checkout"
