@@ -15,7 +15,7 @@ import com.example.projectcapstone.authentication.register.RegisterActivity
 import com.example.projectcapstone.databinding.FragmentHomeBinding
 import com.example.projectcapstone.network.response.Product
 import com.example.projectcapstone.network.response.ProductResponse
-import com.example.projectcapstone.ui.ProductDetail
+import com.example.projectcapstone.ui.productdetail.ProductDetail
 
 
 class HomeFragment : Fragment() {
