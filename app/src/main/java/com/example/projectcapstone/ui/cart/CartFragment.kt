@@ -13,7 +13,7 @@ import com.example.projectcapstone.R
 import com.example.projectcapstone.adapter.CartAdapter
 import com.example.projectcapstone.databinding.FragmentCartBinding
 import com.example.projectcapstone.network.response.CartResponse
-import com.example.projectcapstone.ui.ProductDetail
+import com.example.projectcapstone.ui.productdetail.ProductDetail
 
 
 class CartFragment : Fragment() {
