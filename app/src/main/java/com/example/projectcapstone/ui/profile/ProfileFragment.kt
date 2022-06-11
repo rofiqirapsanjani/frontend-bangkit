@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.projectcapstone.databinding.FragmentProfileBinding
 import com.example.projectcapstone.ui.mystore.MyStoreActivity
+import com.example.projectcapstone.ui.orderhistory.OrderHistoryActivity
 
 class ProfileFragment : Fragment() {
 
@@ -29,9 +30,14 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.btnMyStore.setOnClickListener {
-            val intent = Intent(activity, MyStoreActivity::class.java)
+        binding.btnOrderHistory.setOnClickListener {
+            val intent = Intent(activity, OrderHistoryActivity::class.java)
             startActivity(intent)
+        }
+
+        binding.btnMyStore.setOnClickListener {
+            val i = Intent(activity, MyStoreActivity::class.java)
+            startActivity(i)
         }
 
         return root

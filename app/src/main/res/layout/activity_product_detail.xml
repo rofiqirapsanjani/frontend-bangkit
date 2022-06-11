@@ -23,7 +23,6 @@
                 android:id="@+id/productimage"
                 android:layout_width="match_parent"
                 android:layout_height="379dp"
-                android:background="@drawable/button_rounded"
                 android:elevation="4dp"
                 android:visibility="visible">
 
@@ -51,7 +50,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/productimage"
-                android:background="@drawable/button_rounded"
                 android:orientation="horizontal"
                 android:padding="8dp"
                 android:visibility="visible">

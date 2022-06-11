@@ -9,28 +9,39 @@
     tools:context=".ui.profile.ProfileFragment">
 
     <TextView
-        android:id="@+id/textProfile"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:gravity="left"
+        android:layout_height="86dp"
+        android:gravity="center"
         android:text="@string/title_profile"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1080dp"
+        android:background="@drawable/wishlist_shape_panel"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
         android:id="@+id/view_box"
         android:layout_width="320dp"
         android:layout_height="150dp"
-        android:background="@drawable/button_rounded"
+        android:background="@drawable/button_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -49,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textProfile" />
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal" />
 
     <TextView
         android:id="@+id/tv_detail_name"
@@ -158,6 +169,22 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_cards"
         app:layout_constraintTop_toBottomOf="@+id/btn_cards" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_rounded"
+        android:gravity="left"
+        android:text="@string/logout"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_my_store"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_my_store"
+        app:layout_constraintTop_toBottomOf="@+id/btn_my_store" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
