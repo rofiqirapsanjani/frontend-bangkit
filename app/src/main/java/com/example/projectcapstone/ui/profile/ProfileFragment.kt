@@ -10,6 +10,7 @@ import com.example.projectcapstone.R
 import com.example.projectcapstone.authentication.login.LoginActivity
 import com.example.projectcapstone.databinding.FragmentProfileBinding
 import com.example.projectcapstone.viewmodel.MainViewModel
+import com.example.projectcapstone.ui.mystore.MyStoreActivity
 
 class ProfileFragment : Fragment() {
 
