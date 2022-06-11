@@ -40,6 +40,10 @@
     <string name="reg_fail">Registrasi gagal</string>
     <string name="login_ok">Login Berhasil</string>
     <string name="login_fail">Login Gagal</string>
+    
+    <string name="information">Informasi</string>
+    <string name="lanjut">lanjut</string>
+    <string name="dummy_description">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsu....</string>
 
     <string name="information">Informasi</string>
     <string name="lanjut">lanjut</string>
