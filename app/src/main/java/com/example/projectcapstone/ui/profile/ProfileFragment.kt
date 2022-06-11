@@ -36,6 +36,11 @@ class ProfileFragment : Fragment() {
 //            val i = Intent (this@ProfileFragment.requireContext(), LoginActivity::class.java)
 //            startActivity(i)
 //        }
+        
+        binding.btnMyStore.setOnClickListener {
+            val intent = Intent(activity, MyStoreActivity::class.java)
+            startActivity(intent)
+        }
 
         binding.toLogout.setOnClickListener {
             mainViewModel.logout()
