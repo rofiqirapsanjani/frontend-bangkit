@@ -12,7 +12,6 @@ class OrderActivity  : AppCompatActivity() {
 //    val pref = UserPreference.getInstance(dataStore)
     private lateinit var binding: ActivityOrderBinding
     private lateinit var orderViewModel: OrderViewModel
-    private lateinit var stripePayment : StripePayment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
