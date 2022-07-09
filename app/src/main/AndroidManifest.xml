@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectcapstone">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectCapstone"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.camera.CaptureImage"
+            android:exported="false"></activity>
+        <activity
+            android:name=".ui.camera.CameraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.order.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orderhistory.OrderHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.mystore.MyStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="SplashScreenActivity" />
+        <activity
+            android:name=".authentication.register.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProjectCapstone.TidakAdaToolbar" />
+        <activity
+            android:name=".authentication.login.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProjectCapstone.TidakAdaToolbar" />
+        <activity
+            android:name=".ui.profile.ProfileFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".ui.splash.SplashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

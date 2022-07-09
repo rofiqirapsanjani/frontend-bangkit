@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Thriftee</string>
+    <string name="title_home">Home</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+
+    <string name="name">Nama</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signup">Daftar</string>
+    <string name="signup_2">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="Bayar">Bayar</string>
+    <string name="have_account">sudah memiliki akun?</string>
+    <string name="dont_have_account">Belum memiliki akun?</string>
+    <string name="copyright">© 2022 CapTeam</string>
+    <string name="masuk">Masuk</string>
+
+    <string name="logout_menu">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="location">location</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="shopping_address">Shopping Address</string>
+    <string name="order_history">Order History</string>
+    <string name="cards">Cards</string>
+    <string name="my_store">My Store</string>
+    <string name="review">Ulasan</string>
+    <string name="product_sell">Produk Terjual</string>
+    <string name="time_seller">Lama Berjualan</string>
+
+    <string name="reg_ok">Registrasi berhasil</string>
+    <string name="reg_fail">Registrasi gagal</string>
+    <string name="login_ok">Login Berhasil</string>
+    <string name="login_fail">Login Gagal</string>
+    <string name="dummy_description">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsu....</string>
+
+    <string name="information">Informasi</string>
+    <string name="lanjut">lanjut</string>
+    <string name="checkout">Checkout</string>
+    <string name="address">Address</string>
+    <string name="lorem_text">Address</string>
+    <string name="smethod">Shipping Method</string>
+    <string name="pmethod">Payment Method</string>
+    <string name="tharga">Amount:</string>
+    <string name="tambah_keranjang_ok">Barang Dimasukkan Keranjang</string>
+    <string name="ok">oke</string>
+    <string name="tambah_keranjang_tidak">Proses Tidak Berhasil</string>
+    <string name="logout_btn">logout</string>
+    <string name="logout_succes">Logout Berhasil</string>
+    <string name="searchcamera">Search With Camera</string>
+
+</resources>
